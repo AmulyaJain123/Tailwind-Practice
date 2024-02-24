@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Image Gallery</title>
+</head>
+
+<body>
+    <div class="bg-cyan-50 min-h-screen flex justify-center items-center">
+        <!-- Main Div -->
+        <div
+            class="bg-white max-w-[22rem] md:max-w-full md:max-[863px]:min-w-[863px] md:mx-4 md:p-36 shadow-2xl pb-6 my-4 rounded-2xl flex flex-col space-y-12">
+            <!-- Upper Header -->
+            <div
+                class="flex flex-col h-fit mt-8 items-center justify-evenly space-y-4 md:mb-14 md:space-y-0 md:space-x-8 md:flex-row md:justify-end">
+                <div class="group">
+                    <a href="#" class="text-lg">Vector</a>
+                    <div class="mx-2 pt-2 border-b-2 border-white duration-500 group-hover:border-black">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#" class="text-lg">Illustrations</a>
+                    <div class="mx-2 pt-2 border-b-2 border-white duration-500 group-hover:border-black">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#" class="text-lg">Images</a>
+                    <div class="mx-2 pt-2 border-b-2 border-white duration-500 group-hover:border-black">
+                    </div>
+                </div>
+                <div class="group">
+                    <a href="#" class="text-lg">Icons</a>
+                    <div class="mx-2 pt-2 border-b-2 border-white duration-500 group-hover:border-black">
+                    </div>
+                </div>
+            </div>
+            <!-- Search Bar & Upload Btn -->
+            <div class="flex flex-col mb-6 space-y-6 md:space-y-0 md:flex-row md:justify-between">
+                <div class="border-b mx-4 md:mx-0 border-slate-300 flex justify-between space-x-5">
+                    <input type="text"
+                        class="bg-white focus:outline-none border-none md:w-80 pl-6 placehoder-slate-300 text-xl font-[300]"
+                        placeholder="Search">
+                    <button class="hover:scale-120">
+                        <svg class="opacity-75 hover:scale-110 duration-200" xmlns="http://www.w3.org/2000/svg" x="0px"
+                            y="0px" width="30" height="30" viewBox="0,0,256,256" style="fill:#000000;">
+                            <g fill="#94a3b8" fill-rule="nonzero" stroke="none" stroke-width="1" stroke-linecap="butt"
+                                stroke-linejoin="miter" stroke-miterlimit="10" stroke-dasharray="" stroke-dashoffset="0"
+                                font-family="none" font-weight="none" font-size="none" text-anchor="none"
+                                style="mix-blend-mode: normal">
+                                <g transform="scale(8.53333,8.53333)">
+                                    <path
+                                        d="M13,3c-5.511,0 -10,4.489 -10,10c0,5.511 4.489,10 10,10c2.39651,0 4.59738,-0.85101 6.32227,-2.26367l5.9707,5.9707c0.25082,0.26124 0.62327,0.36648 0.97371,0.27512c0.35044,-0.09136 0.62411,-0.36503 0.71547,-0.71547c0.09136,-0.35044 -0.01388,-0.72289 -0.27512,-0.97371l-5.9707,-5.9707c1.41266,-1.72488 2.26367,-3.92576 2.26367,-6.32227c0,-5.511 -4.489,-10 -10,-10zM13,5c4.43012,0 8,3.56988 8,8c0,4.43012 -3.56988,8 -8,8c-4.43012,0 -8,-3.56988 -8,-8c0,-4.43012 3.56988,-8 8,-8z">
+                                    </path>
+                                </g>
+                            </g>
+                        </svg>
+                    </button>
+                </div>
+                <button
+                    class="bg-black md:px-12 mx-4 md:mx-0 text-center text-white text-2xl py-3 rounded-md border hover:border-black hover:text-black hover:bg-white duration-200">Upload</button>
+            </div>
+            <!-- Image Div -->
+            <div
+                class="mx-6 mb-6 md:mx-0 grid grid-cols-1  md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-5 gap-x-4 gap-y-4">
+                <div class="relative group">
+                    <img src="image1.jpg"></img>
+                    <div
+                        class="h-1/4 md:h-1/3 bg-black/0 flex justify-between opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 left-0 group-hover:bg-black/40 duration-200">
+                        <div class="my-auto pl-6">
+                            <h3 class="text-white md:text-[0.8rem]">Abstract Painting</h3>
+                            <h3 class="text-white text-xs md:text-[0.6rem]">245 Likes - 35 Shares</h3>
+                        </div>
+                        <div class="my-auto pr-6 md:pr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark"
+                                width="28" height="28" viewBox="0 0 24 24" stroke-width="1.2" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="image2.jpg"></img>
+                    <div
+                        class="h-1/4 md:h-1/3 bg-black/0 flex justify-between opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 left-0 group-hover:bg-black/40 duration-200">
+                        <div class="my-auto pl-6">
+                            <h3 class="text-white md:text-[0.8rem]">Abstract Painting</h3>
+                            <h3 class="text-white text-xs md:text-[0.6rem]">245 Likes - 35 Shares</h3>
+                        </div>
+                        <div class="my-auto pr-6 md:pr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark"
+                                width="28" height="28" viewBox="0 0 24 24" stroke-width="1.2" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="image3.jpg"></img>
+                    <div
+                        class="h-1/4 md:h-1/3 bg-black/0 flex justify-between opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 left-0 group-hover:bg-black/40 duration-200">
+                        <div class="my-auto pl-6">
+                            <h3 class="text-white md:text-[0.8rem]">Abstract Painting</h3>
+                            <h3 class="text-white text-xs md:text-[0.6rem]">245 Likes - 35 Shares</h3>
+                        </div>
+                        <div class="my-auto pr-6 md:pr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark"
+                                width="28" height="28" viewBox="0 0 24 24" stroke-width="1.2" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="image4.jpg"></img>
+                    <div
+                        class="h-1/4 md:h-1/3 bg-black/0 flex justify-between opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 left-0 group-hover:bg-black/40 duration-200">
+                        <div class="my-auto pl-6">
+                            <h3 class="text-white md:text-[0.8rem]">Abstract Painting</h3>
+                            <h3 class="text-white text-xs md:text-[0.6rem]">245 Likes - 35 Shares</h3>
+                        </div>
+                        <div class="my-auto pr-6 md:pr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark"
+                                width="28" height="28" viewBox="0 0 24 24" stroke-width="1.2" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="image5.jpg"></img>
+                    <div
+                        class="h-1/4 md:h-1/3 bg-black/0 flex justify-between opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 left-0 group-hover:bg-black/40 duration-200">
+                        <div class="my-auto pl-6">
+                            <h3 class="text-white md:text-[0.8rem]">Abstract Painting</h3>
+                            <h3 class="text-white text-xs md:text-[0.6rem]">245 Likes - 35 Shares</h3>
+                        </div>
+                        <div class="my-auto pr-6 md:pr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark"
+                                width="28" height="28" viewBox="0 0 24 24" stroke-width="1.2" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+                <div class="relative group">
+                    <img src="image6.jpg"></img>
+                    <div
+                        class="h-1/4 md:h-1/3 bg-black/0 flex justify-between opacity-0 group-hover:opacity-100 absolute bottom-0 right-0 left-0 group-hover:bg-black/40 duration-200">
+                        <div class="my-auto pl-6">
+                            <h3 class="text-white md:text-[0.8rem]">Abstract Painting</h3>
+                            <h3 class="text-white text-xs md:text-[0.6rem]">245 Likes - 35 Shares</h3>
+                        </div>
+                        <div class="my-auto pr-6 md:pr-3">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-bookmark"
+                                width="28" height="28" viewBox="0 0 24 24" stroke-width="1.2" stroke="#ffffff"
+                                fill="none" stroke-linecap="round" stroke-linejoin="round">
+                                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                                <path d="M9 4h6a2 2 0 0 1 2 2v14l-5 -3l-5 3v-14a2 2 0 0 1 2 -2" />
+                            </svg>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</body>
+
+</html>
